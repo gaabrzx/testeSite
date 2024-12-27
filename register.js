@@ -33,7 +33,8 @@ submit.addEventListener("click", function (event) {
     .then((userCredential) => {
       // Signed up
       const user = userCredential.user;
-      window.location.href = "index.html";
+      email.value = "";
+      password.value = "";
       // ...
     })
     .catch((error) => {
