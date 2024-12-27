@@ -33,8 +33,7 @@ submit.addEventListener("click", function (event) {
     .then((userCredential) => {
       // Signed up
       const user = userCredential.user;
-      alert("Usuário cadastrado com sucesso!");
-      window.location.href = "index.html";
+      window.location.href = "sistema.html";
       // ...
     })
     .catch((error) => {
